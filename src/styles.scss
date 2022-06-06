@@ -1,3 +1,5 @@
+@import '~bootstrap/scss/bootstrap';
+
 app-root,
 body,
 html {
@@ -6,3 +8,17 @@ html {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.btn-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  color: #357d7a;
+  opacity: 0.8;
+
+  &:hover, &:active {
+    color: #357d7a;
+    text-decoration: none;
+    opacity: 1;
+  }
+}

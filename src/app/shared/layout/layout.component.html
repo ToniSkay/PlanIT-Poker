@@ -1,18 +1,20 @@
 <mat-toolbar>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
+    <button mat-icon-button class="example-icon" (click)="drawer.toggle()">
       <mat-icon *ngIf="!drawer.opened; else closeButton">menu</mat-icon>
 
       <ng-template #closeButton>
         <mat-icon>close</mat-icon>
       </ng-template>
     </button>
-    <span>PlanIT Poker</span>
+
+    <span class="app-title">PlanIT Poker</span>
 </mat-toolbar>
 
-<mat-drawer-container class="example-container">
-    <mat-drawer #drawer class="example-sidenav" mode="side">
+<mat-drawer-container class="drawer-container">
+    <mat-drawer #drawer class="sidenav" mode="side" [opened]="true">
       <div>
-        <mat-icon class="rooms">group</mat-icon>
+        <mat-icon class="rooms">list</mat-icon>
+        <label>Rooms</label>
       </div>
     </mat-drawer>
 
