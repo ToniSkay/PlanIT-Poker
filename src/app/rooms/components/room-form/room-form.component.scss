@@ -1,0 +1,32 @@
+::ng-deep {
+  .mat-dialog-container {
+    background-color: whitesmoke;
+    box-shadow: 0 0 20px 1px #161B1D;
+    color: #161B1D;
+
+    ::-webkit-input-placeholder {
+      color: #161B1D;
+    }
+  }
+
+  .mat-focused .mat-form-field-label {
+    color: #161B1D;
+  }
+
+  .mat-form-field-underline, .mat-form-field-ripple {
+    background-color: #161B1D !important;
+  }
+
+  mat-label {
+    color: #161B1D;
+  }
+}
+
+.room-form-header {
+  display: flex;
+  justify-content: space-between;
+
+  .close {
+    cursor: pointer;
+  }
+}
