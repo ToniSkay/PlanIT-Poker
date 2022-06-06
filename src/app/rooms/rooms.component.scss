@@ -1,3 +1,14 @@
 .rooms, .rooms-container {
   padding-top: 20px;
 }
+
+.add-room {
+  background-color: ghostwhite;
+  box-shadow:
+    4px 4px 5px 0 rgba(255, 255, 255, 0.3) inset,
+    -2px -2px 5px 0 rgba(0, 0, 0, .25) inset;
+
+  &:focus {
+    text-decoration: none;
+  }
+}

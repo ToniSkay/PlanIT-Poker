@@ -1,16 +1,10 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-room-item',
   templateUrl: './room-item.component.html',
   styleUrls: ['./room-item.component.scss']
 })
-export class RoomItemComponent implements OnInit {
+export class RoomItemComponent {
   @Input() name: string;
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }

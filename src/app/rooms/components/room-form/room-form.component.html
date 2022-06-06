@@ -1,0 +1,18 @@
+<div class="room-form-container">
+  <div class="room-form-header">
+    <h1 mat-dialog-title>Create room</h1>
+    <mat-icon class="close" (click)="close()">close</mat-icon>
+  </div>
+
+  <div mat-dialog-content>
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Enter a name" [formControl]="nameControl">
+    </mat-form-field>
+  </div>
+
+  <div mat-dialog-actions>
+    <button class="btn btn-light shadow" mat-button mat-dialog-close>Cancel</button>
+    <button class="btn btn-success shadow" mat-button mat-dialog-close (click)="save()">Save</button>
+  </div>
+</div>
