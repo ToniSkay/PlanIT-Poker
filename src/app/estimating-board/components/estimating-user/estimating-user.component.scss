@@ -16,4 +16,16 @@
     width: 35px;
     height: 35px;
   }
+
+  .status {
+    font-size: 16px;
+    padding: 8px;
+    font-weight: 1000;
+    visibility: hidden;
+
+    &.voted {
+      visibility: visible;
+      color: green;
+    }
+  }
 }

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./estimating-cards.component.scss']
 })
 export class EstimatingCardsComponent implements OnInit {
-  cardContent = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '?']
+  cardContent = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '?', '☕']
 
   constructor() { }
 

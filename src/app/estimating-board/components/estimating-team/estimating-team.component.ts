@@ -9,7 +9,7 @@ import {EstimatingUser} from "../estimating-user/interfaces/estimating-user";
 export class EstimatingTeamComponent implements OnInit {
   mockUsers: EstimatingUser[] = [
     {name: 'Anton', isVoted: true},
-    {name: 'Max', isVoted: true},
+    {name: 'Max', isVoted: false},
     {name: 'Andy', isVoted: true},
   ]
 

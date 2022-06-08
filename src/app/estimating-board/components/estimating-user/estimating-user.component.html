@@ -2,4 +2,6 @@
   <img class="avatar" src="assets/icons/icons8-user-64.png" alt="user">
 
   <span class="user-name">{{ user.name }}</span>
+
+  <mat-icon class="status" [class.voted]="user.isVoted">done</mat-icon>
 </div>
