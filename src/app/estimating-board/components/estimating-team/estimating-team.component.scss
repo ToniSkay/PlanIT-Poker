@@ -1,15 +1,14 @@
 .estimating-team {
-  margin-top: 10px;
   width: 370px;
   height: 78vh;
   box-shadow: 0 0 8px 0 #5D7D97;
-  border-radius: 5px;
   color: #161B1D;
+  overflow: auto;
+}
 
-  h1 {
-    padding: 10px;
-    margin-bottom: 0;
-    color: white;
-    background-color: #5D7D97;
-  }
+h1 {
+  padding: 10px;
+  margin-bottom: 0;
+  color: white;
+  background-color: #5D7D97;
 }
