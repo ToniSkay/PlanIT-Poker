@@ -1,0 +1,32 @@
+.estimating-card {
+  width: 100px;
+  height: 130px;
+  background-color: white;
+  margin: 10px;
+  box-shadow: 0 0 7px 0 #161B1D;
+  border-radius: 10px;
+  color: #161B1D;
+
+  .header-content {
+    font-weight: 600;
+    opacity: 0.6;
+    padding-left: 10px;
+  }
+
+  .card-content {
+    width: 70px;
+    height: 95px;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+
+    span {
+      font-weight: 300;
+      font-size: 50px;
+    }
+  }
+}

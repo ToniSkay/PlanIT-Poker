@@ -1,0 +1,19 @@
+.estimating-user {
+  display: flex;
+  border-top: 2px solid rgba(236, 236, 236, 1);
+  border-bottom: 2px solid rgba(236, 236, 236, 1);
+  padding: 10px;
+
+  .user-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    padding-left: 10px;
+  }
+
+  .avatar {
+    width: 35px;
+    height: 35px;
+  }
+}

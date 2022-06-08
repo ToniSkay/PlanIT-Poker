@@ -6,6 +6,7 @@ import {SharedModule} from "./shared/shared.module";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {RoomsModule} from "./rooms/rooms.module";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {EstimatingBoardModule} from "./estimating-board/estimating-board.module";
 
 @NgModule({
   declarations: [
@@ -15,9 +16,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    NgbModule,
+
+    EstimatingBoardModule,
     SharedModule,
     RoomsModule,
-    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

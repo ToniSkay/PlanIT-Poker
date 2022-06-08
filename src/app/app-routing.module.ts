@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {RoutePath} from "./shared/enums/route-path";
 import {LayoutComponent} from "./shared/layout/layout.component";
 import {RoomsComponent} from "./rooms/rooms.component";
+import {EstimatingBoardComponent} from "./estimating-board/estimating-board.component";
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
       {
         path: RoutePath.Rooms,
         component: RoomsComponent,
+      },
+      {
+        path: RoutePath.EstimatingBoard,
+        component: EstimatingBoardComponent,
       },
     ],
   },
