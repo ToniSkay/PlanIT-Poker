@@ -20,7 +20,7 @@ const routes: Routes = [
         component: RoomsComponent,
       },
       {
-        path: RoutePath.EstimatingBoard,
+        path: `${RoutePath.EstimatingBoard}/:roomSystemName`,
         component: EstimatingBoardComponent,
       },
     ],
