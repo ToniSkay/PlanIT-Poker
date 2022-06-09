@@ -1,0 +1,10 @@
+<div cdkDropList (cdkDropListDropped)="drop($event)">
+  <div
+    class="story"
+    [class.active]="isActive(story)"
+    *ngFor="let story of activeStories"
+    cdkDrag>
+    <span class="story-title">{{ story.title }}</span>
+  </div>
+</div>
+

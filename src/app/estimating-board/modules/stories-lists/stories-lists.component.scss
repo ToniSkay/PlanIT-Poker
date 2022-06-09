@@ -1,0 +1,9 @@
+.stories-lists {
+  color: #161B1D;
+  max-width: 90%;
+  box-shadow: 0 0 5px 0 #5D7D97;
+}
+
+:host::ng-deep .mat-tab-label-content {
+  color: #161B1D;
+}

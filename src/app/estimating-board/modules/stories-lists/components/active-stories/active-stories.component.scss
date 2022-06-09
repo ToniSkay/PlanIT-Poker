@@ -1,0 +1,15 @@
+.story {
+  display: flex;
+  color: #161B1D;
+  min-height: 50px;
+  align-items: center;
+  cursor: move;
+
+  .story-title {
+    padding: 10px;
+  }
+
+  &.active {
+    background-color: rgba(0, 123, 167, 0.1);
+  }
+}
