@@ -1,5 +1,5 @@
-<div class="room-item-container">
-  <span class="room-name">{{ name }}</span>
+<div class="room-item-container" (click)="openRoom()">
+  <span class="room-name">{{ room.name }}</span>
 
-  <mat-icon class="room-actions">more_vert</mat-icon>
+  <app-room-actions [room]="room"></app-room-actions>
 </div>

@@ -1,13 +1,13 @@
 <div class="room-form-container">
   <div class="room-form-header">
-    <h1 mat-dialog-title>Create room</h1>
+    <h1 mat-dialog-title>{{ title }}</h1>
     <mat-icon class="close" (click)="close()">close</mat-icon>
   </div>
 
   <div mat-dialog-content>
     <mat-form-field>
       <mat-label>Name</mat-label>
-      <input matInput placeholder="Enter a name" [formControl]="nameControl">
+      <input matInput placeholder="Enter a name" [formControl]="formGroup.controls.name">
     </mat-form-field>
   </div>
 

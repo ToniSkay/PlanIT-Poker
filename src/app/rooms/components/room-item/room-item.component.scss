@@ -7,20 +7,20 @@
   min-height: 100px;
   align-items: center;
   font-size: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.8s;
   box-shadow:
     5px 5px 10px 0 rgba(255, 255, 255, 0.3) inset,
     -2px -2px 10px 0 rgba(0, 0, 0, .25) inset;
 
+  &:hover {
+    transition: box-shadow 0.8s;
+    box-shadow:
+      5px 5px 10px 0 rgba(255, 255, 255, 0.6) inset,
+      -2px -2px 10px 0 rgba(0, 0, 0, 0.6) inset;
+  }
 
   .room-name {
     padding-left: 20px;
-  }
-
-  .room-actions {
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    font-size: 35px;
-    padding-right: 40px;
   }
 }

@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {RoomItem} from "./interfaces/room-item";
 import {RoomFormComponent} from "./components/room-form/room-form.component";
 import {MatDialog} from "@angular/material/dialog";
+import {generateSystemName} from "../shared/utils/generate-system-name";
+import {defaultModalConfig} from "../shared/constants/default-modal-config";
 
 @Component({
   selector: 'app-rooms',
@@ -10,22 +12,16 @@ import {MatDialog} from "@angular/material/dialog";
 })
 export class RoomsComponent implements OnInit {
   mockRooms: RoomItem[] = [
-    {name: 'test1'},
-    {name: 'test2'},
-    {name: 'test3'},
+    {name: 'test1', systemName: generateSystemName()},
+    {name: 'test2', systemName: generateSystemName()},
+    {name: 'test3', systemName: generateSystemName()},
   ]
 
-  constructor(public dialog: MatDialog) { }
+  constructor(private dialog: MatDialog) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit() {}
 
-  openDialog(): void {
-    this.dialog.open(RoomFormComponent, {
-      width: '500px',
-      height: '200px',
-      enterAnimationDuration: '400ms',
-      exitAnimationDuration: '400ms',
-    });
+  openDialog() {
+    this.dialog.open(RoomFormComponent, defaultModalConfig);
   }
 }

@@ -2,6 +2,6 @@
   <button class="add-room btn btn-link" (click)="openDialog()">+ Add room</button>
 
   <div class="rooms" *ngFor="let room of mockRooms">
-    <app-room-item [name]="room.name"></app-room-item>
+    <app-room-item [room]="room"></app-room-item>
   </div>
 </div>

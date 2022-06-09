@@ -1,0 +1,6 @@
+<mat-icon onclick="event.stopPropagation()" class="room-actions" [matMenuTriggerFor]="menu" tabindex="-1">more_vert</mat-icon>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item (click)="openDialog()">Edit</button>
+  <button mat-menu-item>Delete</button>
+</mat-menu>

@@ -8,12 +8,15 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatDialogModule} from "@angular/material/dialog";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
+import {MatMenuModule} from "@angular/material/menu";
+import { RoomActionsComponent } from './components/room-actions/room-actions.component';
 
 @NgModule({
   declarations: [
     RoomsComponent,
     RoomItemComponent,
-    RoomFormComponent
+    RoomFormComponent,
+    RoomActionsComponent
   ],
   imports: [
     CommonModule,
@@ -23,6 +26,7 @@ import {MatInputModule} from "@angular/material/input";
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
+    MatMenuModule,
   ]
 })
 export class RoomsModule { }

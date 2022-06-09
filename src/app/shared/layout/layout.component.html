@@ -7,12 +7,12 @@
       </ng-template>
     </button>
 
-    <span class="app-title">PlanIT Poker</span>
+    <span class="app-title" (click)="redirectToRooms()">PlanIT Poker</span>
 </mat-toolbar>
 
 <mat-drawer-container class="drawer-container">
     <mat-drawer #drawer class="sidenav" mode="side" [opened]="true">
-      <div>
+      <div (click)="redirectToRooms()">
         <mat-icon class="rooms">list</mat-icon>
         <label>Rooms</label>
       </div>

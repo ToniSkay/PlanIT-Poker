@@ -7,7 +7,6 @@ import { StoriesListsComponent } from './modules/stories-lists/stories-lists.com
 import { EstimatingCardComponent } from './components/estimating-card/estimating-card.component';
 import {MatIconModule} from "@angular/material/icon";
 import { EstimatingUserComponent } from './components/estimating-user/estimating-user.component';
-import {MatTabsModule} from "@angular/material/tabs";
 import {StoriesListsModule} from "./modules/stories-lists/stories-lists.module";
 
 @NgModule({
